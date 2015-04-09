@@ -26,9 +26,13 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
+
+$("#btnblog").click(function(){
+	$("#sidebar").animate({width:'33.3333%'},'slow');
+});
+
 if(window.location.href=="http://blog.ankanbiswas.in/uno-dbyll/")
 {
-console.log('default');
 $("#sidebar").css({width:'100%'});
 
 $("#btnblog").click(function(){
@@ -101,7 +105,7 @@ $("#btnblog").click(function(){
    </ul>
  </div>
 
-<div class="col-sm-4 sidebar hidden-xs" id="sidebar">
+<div class="col-sm-12 sidebar hidden-xs" id="sidebar">
 		{% include sidebar.html %}
 	</div>
 
