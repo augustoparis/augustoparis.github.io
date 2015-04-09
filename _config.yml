@@ -27,4 +27,4 @@ author:
   facebook: augustodacunhaparis
   googleplus: +AnkanBiswasWorkspace
   bio: /assets/media/poker.png
-  uno-dbyll: https://raw.githubusercontent.com/talk2ankan/uno-dbyll/gh-pages/uno-dbyll.png
+  uno-dbyll: "/assets/media/poker.png"
