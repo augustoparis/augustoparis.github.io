@@ -14,13 +14,13 @@ paginate_path: "page/:num"
 categories_path : categories.html
 tags_path : tags.html
 
-BASE_PATH : http://blog.ankanbiswas.in/uno-dbyll
+BASE_PATH : http://augustoparis.github.io/
 
-title : uno-dbyll
+title : Augusto Paris
 
 author:
   name: Augusto Paris
-  role: Jekyll Theme
+  role: Augusto Paris
   email: support@ankanbiswas.in
   github: talk2ankan
   twitter: talk2ankan
