@@ -16,13 +16,10 @@ tags_path : tags.html
 
 BASE_PATH : http://blog.ankanbiswas.in/uno-dbyll
 
-
 title : uno-dbyll
 
-
-
 author:
-  name: Ankan Biswas
+  name: Augusto Paris
   role: Jekyll Theme
   email: support@ankanbiswas.in
   github: talk2ankan
