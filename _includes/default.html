@@ -27,20 +27,15 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-console.log( 'asdasdasd' );
+	console.log( 'asdasdasd' );
 
-$("#sidebar").css({width:'100%'});
+	if(window.location.href=="http://augustoparis.github.io") {
+		$("#sidebar").css({width:'100%'});
 
-$("#btnblog").click(function(){
-	$("#sidebar").animate({width:'33.3333%'},'slow');
-});
-
-if(window.location.href=="http://blog.ankanbiswas.in/uno-dbyll/")
-{
-$("#btnblog").click(function(){
-	$("#sidebar").animate({width:'33.3333%'},'slow');
-});
-}
+		$("#btnblog").click(function(){
+			$("#sidebar").animate({width:'33.3333%'},'slow');
+		});
+	}
 });
 
 </script>
