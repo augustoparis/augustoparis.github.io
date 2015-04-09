@@ -23,18 +23,18 @@
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.js"></script>
-	
+
 <script type="text/javascript">
 $(document).ready(function(){
-if(window.location.href=="http://blog.ankanbiswas.in/uno-dbyll/")
-{
+//if(window.location.href=="http://blog.ankanbiswas.in/uno-dbyll/")
+//{
 $("#sidebar").css({width:'100%'});
 $("#btnblog").click(function(){
 $("#sidebar").animate({width:'33.3333%'},'slow');
 });
-}
+//}
 });
-	
+
 </script>
 	</head>
 <body>
@@ -64,15 +64,15 @@ $("#sidebar").animate({width:'33.3333%'},'slow');
         <i class="fa fa-envelope"></i>
       </a>
       {% endif %}
-     
 
-     
+
+
       <a class="navbar-brand" href="{{ site.BASE_PATH }}">
         <img src="{{site.author.uno-dbyll}}" class="img-circle" style="height:35px;width:35px"/>
         {{ site.title }}
       </a>
     </div>
-    
+
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbarHeaderCollapse">
@@ -127,6 +127,6 @@ $("#sidebar").animate({width:'33.3333%'},'slow');
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
     </script>
-    
+
 </body>
 </html>
