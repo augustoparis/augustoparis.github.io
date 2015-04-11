@@ -80,8 +80,8 @@ $(document).ready(function(){
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbarHeaderCollapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="{% if BASE_PATH %}{{ site.BASE_PATH }}{% else %}{{ site.BASE_PATH}}{% endif %}">Home</a></li>
-        <li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
+        <li class="active"><a href="{% if BASE_PATH %}{{ site.BASE_PATH }}{% else %}{{ site.BASE_PATH}}{% endif %}">Início</a></li>
+        <li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categorias</a></li>
         <li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">Tags</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -94,11 +94,11 @@ $(document).ready(function(){
      <i class="fa fa-bars"></i>
    </button>
    <ul class="dropdown-menu pull-right" role="menu">
-     <li><a href="{% if BASE_PATH %}{{ site.BASE_PATH }}{% else %}{{ site.BASE_PATH}}{% endif %}"><i class="fa fa-home"></i> Home</a></li>
-     <li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i> Categories</a></li>
+     <li><a href="{% if BASE_PATH %}{{ site.BASE_PATH }}{% else %}{{ site.BASE_PATH}}{% endif %}"><i class="fa fa-home"></i> Início</a></li>
+     <li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i> Categorias</a></li>
      <li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i> Tags</a></li>
      <li class="divider"></li>
-     <li><a href="#"><i class="fa fa-arrow-up"></i> Top of Page</a></li>
+     <li><a href="#"><i class="fa fa-arrow-up"></i> Topo da Página</a></li>
    </ul>
  </div>
 
