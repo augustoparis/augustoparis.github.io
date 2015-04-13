@@ -10,9 +10,9 @@ title: "Augusto Paris"
 
   <h2>
 
-  <span class="post-date">
-    {% assign m = page.date | date: "%-m" %}
-    {{ page.date | date: "%-d" }}
+  <p class="post-date">
+    {% assign m = post.date | date: "%-m" %}
+    {{ post.date | date: "%-d" }}
     {% case m %}
        {% when '1' %}de Janeiro
        {% when '2' %}de Fevereiro
@@ -27,9 +27,8 @@ title: "Augusto Paris"
        {% when '11' %}de Novembro
        {% when '12' %}de Dezembro
      {% endcase %}
-    {{ page.date | date: "%Y" }}
-    {% if page.tagline %}<small style="text-transform:none">{{page.tagline}}</small>{% endif %} {% if post.tagline %}<small>{{post.tagline}}</small>{% endif %}
-  </span>
+    {{ post.date | date: "%Y" }}
+  </p>
 
  <!--
  <p class="post-date">
