@@ -10,18 +10,18 @@
      {% assign m = page.date | date: "%-m" %}
      {{ page.date | date: "%-d" }}
      {% case m %}
-        {% when '1' %}de Janeiro
-        {% when '2' %}de Fevereiro
-        {% when '3' %}de Março
-        {% when '4' %}de Abril
-        {% when '5' %}de Maio
-        {% when '6' %}de Junho
-        {% when '7' %}de Julho
-        {% when '8' %}de Agosto
-        {% when '9' %}de Setembro
-        {% when '10' %}de Outubro
-        {% when '11' %}de Novembro
-        {% when '12' %}de Dezembro
+        {% when '1' %}de Janeiro de
+        {% when '2' %}de Fevereiro de
+        {% when '3' %}de Março de
+        {% when '4' %}de Abril de
+        {% when '5' %}de Maio de
+        {% when '6' %}de Junho de
+        {% when '7' %}de Julho de
+        {% when '8' %}de Agosto de
+        {% when '9' %}de Setembro de
+        {% when '10' %}de Outubro de
+        {% when '11' %}de Novembro de
+        {% when '12' %}de Dezembro de 
       {% endcase %}
      {{ page.date | date: "%Y" }}
      {% if page.tagline %}<small style="text-transform:none">{{page.tagline}}</small>{% endif %} {% if post.tagline %}<small>{{post.tagline}}</small>{% endif %}
