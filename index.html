@@ -9,6 +9,28 @@ title: "Augusto Paris"
 <article class="home">
 
   <h2>
+
+  <span class="post-date">
+    {% assign m = page.date | date: "%-m" %}
+    {{ page.date | date: "%-d" }}
+    {% case m %}
+       {% when '1' %}de Janeiro
+       {% when '2' %}de Fevereiro
+       {% when '3' %}de Março
+       {% when '4' %}de Abril
+       {% when '5' %}de Maio
+       {% when '6' %}de Junho
+       {% when '7' %}de Julho
+       {% when '8' %}de Agosto
+       {% when '9' %}de Setembro
+       {% when '10' %}de Outubro
+       {% when '11' %}de Novembro
+       {% when '12' %}de Dezembro
+     {% endcase %}
+    {{ page.date | date: "%Y" }}
+    {% if page.tagline %}<small style="text-transform:none">{{page.tagline}}</small>{% endif %} {% if post.tagline %}<small>{{post.tagline}}</small>{% endif %}
+  </span>
+
  <!--
  <p class="post-date">
     {% assign d = post.date | date: "%d" | plus:'0' %}
@@ -21,7 +43,7 @@ title: "Augusto Paris"
     {% endcase %}
     {{ post.date | date: "%Y" }}
   </p>
-  -->
+
   <p class="post-date">
     {% assign m = page.date | date: "%-m" %}
     {{ post.date | date: "%B" }}
@@ -41,6 +63,8 @@ title: "Augusto Paris"
      {% endcase %}
     {{ page.date | date: "%Y" }}
   </p>
+
+  -->
     <a href="{{ site.BASE_PATH }}{{ post.url }}" style="font-family: ubuntu">{{ post.title }}</a>
   </h2>
 
