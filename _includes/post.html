@@ -7,9 +7,9 @@
 
   <div class="col-sm-10">
    <span class="post-date">
-     {% assign d = page.date | date: "%d" | plus:'0' %}
-     {{ page.date | date: "%B %d, %Y" }}
-     {% case d %}
+     {% assign m = page.date | date: "%-m" %}
+{{ page.date | date: "%-d" }}
+     {% case m %}
   {% when '1' %}Januar
   {% when '2' %}Februar
   {% when '3' %}M&auml;rz
