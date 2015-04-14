@@ -29,17 +29,17 @@ border: 3px solid #FFF; height:150px;width:150px" />
       </a>
       {% endif %}
 
+			{% if site.author.facebook %}
+			<a type="button" class="social2" href="http://facebook.com/{{ site.author.facebook }}">
+				<i class="fa fa-facebook"></i>
+			</a>
+			{% endif %}
+
       {% if site.author.email %}
       <a type="button" class="social3" href="mailto:{{ site.author.email }}">
         <i class="fa fa-envelope"></i>
       </a>
       {% endif %}
-
-			{% if site.author.email %}
-			<a type="button" class="social1" href="mailto:{{ site.author.email }}">
-				<i class="fa fa-facebook"></i>
-			</a>
-			{% endif %}
 
        <hr class="hr-line1">
        <a type="button"  style="font-size:20px; padding:7px; padding-left:13px;padding-right:13px;margin-right: 10px;" class="social3 " id="btnblog" href="{{ site.BASE_PATH }}/#blog">
