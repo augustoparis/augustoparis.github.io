@@ -59,7 +59,7 @@ $(document).ready(function(){
       {% endif %}
       {% if site.author.twitter %}
       <a type="button" class="navbar-toggle nav-link" href="http://twitter.com/{{ site.author.twitter }}">
-        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
       </a>
       {% endif %}
        {% if site.author.email %}
@@ -67,6 +67,12 @@ $(document).ready(function(){
         <i class="fa fa-envelope"></i>
       </a>
       {% endif %}
+
+			{% if site.author.email %}
+			<a type="button" class="navbar-toggle nav-link" href="mailto:{{ site.author.email }}">
+				<i class="fa fa-facebook"></i>
+			</a>
+			{% endif %}
 
 
 
