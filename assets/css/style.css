@@ -79,7 +79,7 @@ footer {
 
 #sidebar {
 	position: fixed;
-	padding-top: 8%;
+	/*padding-top: 8%;*/
 	height: 100%;
 	background-color:#6049df;
 	background-image: url("/assets/media/bgBack.png"),url("/assets/media/pokerchip.jpg");
@@ -87,6 +87,12 @@ footer {
 	color: #fff;
 	z-index: 5;
 	color: #fff;
+  display: table;
+}
+
+#div-header {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .sidebar-header {
