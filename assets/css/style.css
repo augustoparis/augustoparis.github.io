@@ -39,6 +39,10 @@ font-family: 'Raleway', sans-serif;
 	font-family: ubuntu;
 }
 
+.img-circle {
+	height: 200px;
+    width : 200px;
+}
 
 a.nav-link {
 	padding-bottom: 5px;
